@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS 5 - Bài tập phụ</title>
+    <!-- BOOSTRAP  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-8 mt-5">
+            <h2 class="mb-4">TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
+            <form>
+                <div class="form-group">
+                    <label for="user">Tên người dùng</label>
+                    <input type="text" class="form-control" id="user">
+                </div>
+                <div class="form-group">
+                    <label for="tongThuNhap">Tổng thu nhập cá nhân (triệu)</label>
+                    <input type="number" class="form-control" id="tongThuNhap">
+                </div>
+                <div class="form-group">
+                    <label for="nguoiPhuThuoc">Số người phụ thuộc</label>
+                    <input type="number" class="form-control" id="nguoiPhuThuoc">
+                </div>
+                <button id="ketQua" type="button" class="btn btn-primary">Kết quả</button>
+                <p id="tbThue" class="alert alert-success mt-5"></p>
+            </form>
+        </div>
+        <div class="col-8 mt-5">
+            <h2 class="mb-4">TÍNH TIỀN CÁP</h2>
+            <form>
+                <div class="form-group">
+                    <label for="userCode">Mã khách hàng</label>
+                    <input type="text" class="form-control" id="userCode">
+                </div>
+                <div>
+                    <h3>Loại khách hàng</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="loaiKhachHang" id="nhaDan" value="nhaDan"
+                            checked>
+                        <label class="form-check-label" for="nhaDan">
+                            Nhà Dân
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="loaiKhachHang" id="doanhNghiep"
+                            value="doanhNghiep">
+                        <label class="form-check-label" for="doanhNghiep">
+                            Doanh Nghiệp
+                        </label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="ketNoi">Số kết nối</label>
+                        <input type="number" class="form-control" id="ketNoi" disabled value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="kenhCaoCap">Số kênh cao cấp</label>
+                        <input type="number" class="form-control" id="kenhCaoCap">
+                    </div>
+                    <button id="ketQua2" type="button" class="btn btn-primary">Kết quả</button>
+                    <p id="tbTienCap" class="alert alert-success mt-5"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- BOOSTRAPS 4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
